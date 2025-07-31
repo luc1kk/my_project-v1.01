@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css" media="(min-width: 1280px) and (max-width: 1439px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px) and (max-width: 1279px)">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 767px)">
+    <title>Sattarov web</title>
+</head>
+<body>
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <header>
+        <img src="./img/ico.svg" alt="Main logo" width="160px" height="41px">
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li><a href="#about" class="header-nav__item">About</a></li>
+                <li><a href="#skills" class="header-nav__item">Skills</a></li>
+                <li><a href="#contacts" class="header-nav__item">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1 class="intro__title">Sattarov<br>Roman</h1>
+            <p class="intro__role">web developer</p>
+            <p class="intro__description">Hi! I’m Roman, web developer with 1 years of experience</p>
+            <a href="#skills-button" class="intro__button">Skills</a>
+        </section>
+        <section id="about" class="about">
+            <div class="about__page">
+                <h2 class="about__title">About</h2>
+                <p class="about__description">
+                    Hi! I’m Roman, web developer with 1 years of experience.
+                    I’m 20 years old, live in Russia in Moscow.
+                    Today i'm passing the stage from beginner to senior
+                    web developer.
+                </p>
+            </div>
+            <div class="about__projects-page">
+                <h2 class="about__projects-title">My project:</h2>
+                <ul class="about__projects-list">
+                    <li class="about__projects-item">
+                        <a href="#" class="about__projects-link">
+                            <img src="img/preview.png" alt="Project preview" width="210px" height="130px">
+                            <span class="about__projects-name">Project 1</span>
+                        </a>
+                    </li>
+                    <li class="about__projects-item">
+                        <a href="#" class="about__projects-link">
+                            <img src="img/preview.png" alt="Project preview" width="210px" height="130px">
+                            <span class="about__projects-name">Project 2</span>
+                        </a>
+                    </li>
+                    <li class="about__projects-item">
+                        <a href="#" class="about__projects-link">
+                            <img src="img/preview.png" alt="Project preview" width="210px" height="130px">
+                            <span class="about__projects-name">Project 3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2 id="skills-button" class="skills__title">Soft skills</h2>
+            <p class="skills__descriptions">At the moment I have the following skills:</p>
+            <ul class="skills__soft-skills-list">
+                <li class="skills__item">
+                    <div class="skills-bar__wrapper">
+                        <div class="skills-bar" data-level="50">
+                            <div class="skills-fill"></div>
+                        </div>
+                        <div class="skills-bar__bottom">
+                        </div>
+                    </div>
+                    <span class="skills__name">JavaScript</span>
+                </li>
+                <li class="skills__item skills__item--react">
+                    <div class="skills-bar__wrapper">
+                        <div class="skills-bar" data-level="35">
+                            <div class="skills-fill"></div>
+                        </div>
+                        <div class="skills-bar__bottom">
+                        </div>
+                    </div>
+                    <span class="skills__name">React</span>
+                </li>
+                <li class="skills__item skills__item--html">
+                    <div class="skills-bar__wrapper">
+                        <div class="skills-bar" data-level="75">
+                            <div class="skills-fill"></div>
+                        </div>
+                        <div class="skills-bar__bottom">
+                        </div>
+                    </div>
+                    <span class="skills__name">HTML/CSS</span>
+                </li>
+                <li class="skills__item skills__item--git">
+                    <div class="skills-bar__wrapper">
+                        <div class="skills-bar" data-level="75">
+                            <div class="skills-fill"></div>
+                        </div>
+                        <div class="skills-bar__bottom">
+                        </div>
+                    </div>
+                    <span class="skills__name">Git</span>
+                </li>
+            </ul>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="contacts__feedback-menu">
+                <h2 class="contacts__feedback-menu-title">Feedback</h2>
+                <form action="#" class="contacts__feedback-form">
+                    <ul class="contacts__feedback-container">
+                        <li class="contacts__feedback-input">
+                            <div class="contacts__input-wrapper">
+                                <input type="text" id="username" name="username" required>
+                                <label for="username" class="floating-label">Your name</label>
+                            </div>
+                        </li>
+                        <li class="contacts__feedback-input">
+                            <div class="contacts__input-wrapper">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email" class="floating-label">Your email</label>
+                            </div>
+                        </li>
+                        <li class="contacts__feedback-input">
+                            <div class="contacts__input-wrapper">
+                                <textarea class="user-message" name="message" id="message" required></textarea>
+                                <label for="message" class="floating-label">Your message</label>
+                            </div>
+                            <div class="contacts__char-counter" id="charCounter">0 / 200</div>
+                        </li>
+                    </ul>
+                    <button class="contacts__feedback-submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contacts__text-block">
+                <h2 class="contacts__menu-title">Contacts</h2>
+                <p class="contacts__menu-text">
+                    You can write to me with an idea and a proposal by email.
+                    Or leave your contacts so that we can contact you.
+                </p>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div class="contacts-block">
+            <p class="contacts-block__text">Email<span class="space-text">luc1k603@gmail.com</span></p>
+            <p class="contacts-block__text">Social media</p>
+            <div class="social-media__icons">
+                <a class="social-media__icons-link" href="https://t.me/luc1k_web" target="_blank" rel="noopener noreferrer">
+                    <img class="social-media__icon" src="/img/telegram.svg" alt="Telegram">
+                </a>
+                <a class="social-media__icons-link" href="https://github.com/luc1kk" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="social-media__icon" src="/img/git.svg" alt="Git">
+                </a>
+                <a class="social-media__icons-link" href="https://vk.com/luc1kk" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="social-media__icon" src="/img/vk.svg" alt="Vk">
+                </a>
+                <a class="social-media__icons-link"
+                    href="https://www.instagram.com/luc1kkk?igsh=MTBma3ptbXM4eDZjdA==&utm_source=ig_contact_invite"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="social-media__icon" src="/img/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </aside>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@media (min-width: 1280px) and (max-width:1440px){
+    header{
+        margin: 0 48px 80px;
+        padding-top: 40px;
+    }
+    .header-nav__item{
+        font-size: 20px;
+    }
+
+    main{
+        padding-right: 0;
+    }
+
+    .intro{
+        padding-right: 48px;
+        margin-bottom: 150px;
+        margin-right: 0;
+    }
+
+    .intro__title{
+        font-size: 56px;
+    }
+
+    .intro__role{
+        font-size: 28px;
+    }
+
+    .intro__description{
+        font-size: 16px;
+    }
+
+    .intro__button{
+        font-size: 20px;
+        padding: 8px 60px;
+    }
+
+    .about,.skills{
+        max-width: 55%;
+        margin-bottom: 80px;
+        padding-right: 48px;
+        gap: 40px;
+        margin-bottom: 150px;
+    }
+
+    .contacts{
+        max-width: 70%;
+        margin-bottom: 80px;
+        padding-right: 60px;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about__title,.about__projects-title,
+    .contacts__menu-title,
+    .contacts__feedback-menu-title,
+    .skills__title{
+        font-size: 32px;
+    }
+
+    .about__description,
+    .about__projects-name,
+    .skills__descriptions,
+    .contacts__menu-text{
+        font-size: 15px;
+    }
+
+    .about__projects-link{
+        gap: 60px;
+    }
+
+    .about__projects-link img{
+        width: 180px;
+        height: 110px;
+    }
+
+    .about__projects-name{
+        font-size: 20px;
+    }
+
+    .contacts__feedback-menu-title{
+        margin-bottom: 50px;
+    }
+
+}
